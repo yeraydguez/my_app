@@ -12,6 +12,11 @@ import { Client } from '../client';
   styleUrls: ['./client-list.component.sass']
 })
 export class ClientListComponent implements OnInit {
+
+  clients: Observable<Client[]>;
+
+
+
   constructor(private clientService: ClientService,
     private router: Router) {}
 

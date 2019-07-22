@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h2>Client List</h2>
+    <h2>Lista de Clientes</h2>
   </div>
   <div class="panel-body">
     <table class="table table-striped">
@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let client of clients | async">
+        <tr *ngFor="let client of clients| async">
           <td>{{client.name}}</td>
           <td>{{client.surname1}}</td>
           <td>{{client.surname2}}</td>

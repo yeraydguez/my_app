@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Lista de Tablets</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Nº Serie</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tablet of tablets| async">
+          <td>{{tablet.id}}</td>
+          <td>{{tablet.brand}}</td>
+          <td>{{tablet.model}}</td>
+          <td>{{tablet.serialNo}}</td>
+          <td><button (click)="deleteTablet(tablet.id)" class="btn btn-danger">Borrar</button>
+          <button (click)="tabletDetails(tablet.id)" class="btn btn-info" style="margin-left: 10px">Detalle</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

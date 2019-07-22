@@ -6,11 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientListComponent } from './client-list/client-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TabletListComponent } from './tablet-list/tablet-list.component';
+import { CreateTabletComponent } from './create-tablet/create-tablet.component';
+import { TabletDetailsComponent } from './tablet-details/tablet-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientListComponent
+    ClientListComponent,
+    TabletListComponent,
+    CreateTabletComponent,
+    TabletDetailsComponent
   ],
   imports: [
     BrowserModule,
